@@ -31,6 +31,31 @@ Transform:
   m_Father: {fileID: 7075907526029736036}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5972051655483047212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7075907526029763650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 921ad178d670e452b8086fda44671807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 200
+--- !u!114 &7819638741884084631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7075907526029763650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d924a9e97ab43bb96993118efe3a0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &142285198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,18 +74,6 @@ MonoBehaviour:
   muzzleFlash: {fileID: 4534724458625814725}
   hitEffect: {fileID: 3505050209711650906, guid: 52593b94d45c24f01bf3a41edfa655cf,
     type: 3}
---- !u!114 &5972051655483047212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7075907526029763650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 921ad178d670e452b8086fda44671807, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7075907526029861604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75,7 +88,7 @@ PrefabInstance:
         type: 0}
     - target: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Player Variant
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_RootOrder
