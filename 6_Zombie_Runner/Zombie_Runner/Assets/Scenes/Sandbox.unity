@@ -3620,6 +3620,11 @@ PrefabInstance:
       propertyPath: zoomInFOV
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 6163208022779242644, guid: 58cf638699f9048f08180c447915205b,
+        type: 3}
+      propertyPath: zoomInSensitivity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7075907526029736038, guid: 58cf638699f9048f08180c447915205b,
         type: 3}
       propertyPath: m_RootOrder
