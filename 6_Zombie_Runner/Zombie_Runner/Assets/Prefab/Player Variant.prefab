@@ -56,6 +56,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48d924a9e97ab43bb96993118efe3a0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 0}
+--- !u!114 &6163208022779242644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7075907526029763650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4cf8d55fe7164881a10e6d6ddb7ead8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &142285198
 MonoBehaviour:
   m_ObjectHideFlags: 0
