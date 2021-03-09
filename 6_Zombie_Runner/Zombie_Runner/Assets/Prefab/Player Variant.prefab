@@ -44,6 +44,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 200
+--- !u!114 &6163208022779242644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7075907526029763650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4cf8d55fe7164881a10e6d6ddb7ead8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsCamera: {fileID: 0}
+  zoomOutFOV: 60
+  zoomInFOV: 20
+  zoomOutSensitivity: 2
+  zoomInSensitivity: 0.5
 --- !u!114 &7819638741884084631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,7 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
---- !u!114 &6163208022779242644
+--- !u!114 &3741180980911686269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,9 +83,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7075907526029763650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4cf8d55fe7164881a10e6d6ddb7ead8, type: 3}
+  m_Script: {fileID: 11500000, guid: e72e48e08ecb943c887d745372ff7e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ammoAmount: 10
 --- !u!114 &142285198
 MonoBehaviour:
   m_ObjectHideFlags: 0
