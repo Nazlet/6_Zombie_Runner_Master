@@ -2519,18 +2519,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 458691938}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1614054402 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3741180980911686269, guid: 58cf638699f9048f08180c447915205b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7075907525414487975}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e72e48e08ecb943c887d745372ff7e8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1684209087
 GameObject:
   m_ObjectHideFlags: 0
@@ -3623,9 +3611,59 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 142285198, guid: 58cf638699f9048f08180c447915205b, type: 3}
-      propertyPath: ammoSlot
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557194679203901070, guid: 58cf638699f9048f08180c447915205b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.269
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557194679203901070, guid: 58cf638699f9048f08180c447915205b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.236
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557194679203901070, guid: 58cf638699f9048f08180c447915205b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.504
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557194679203934894, guid: 58cf638699f9048f08180c447915205b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1833498453758816126, guid: 58cf638699f9048f08180c447915205b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2110864007307612034, guid: 58cf638699f9048f08180c447915205b,
+        type: 3}
+      propertyPath: FPCamera
       value: 
-      objectReference: {fileID: 1614054402}
+      objectReference: {fileID: 866879570}
+    - target: {fileID: 2110864007307612034, guid: 58cf638699f9048f08180c447915205b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781794723879228458, guid: 58cf638699f9048f08180c447915205b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073013022274319574, guid: 58cf638699f9048f08180c447915205b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5371482747217307910, guid: 58cf638699f9048f08180c447915205b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6163208022779242644, guid: 58cf638699f9048f08180c447915205b,
         type: 3}
       propertyPath: fpsCamera
