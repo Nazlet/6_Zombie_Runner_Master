@@ -59,23 +59,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 200
---- !u!114 &6163208022779242644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7075907526029763650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4cf8d55fe7164881a10e6d6ddb7ead8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fpsCamera: {fileID: 0}
-  zoomOutFOV: 60
-  zoomInFOV: 20
-  zoomOutSensitivity: 2
-  zoomInSensitivity: 0.5
 --- !u!114 &7819638741884084631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,6 +258,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7075907526029861604}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7075907526023713184 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11400004, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+    type: 3}
+  m_PrefabInstance: {fileID: 7075907526029861604}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7075907526029763650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c9795a96c094f4cbde4d65546aa9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7075907526029736036 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c6453f8e1f814744d8b94e5a6d1f9942,
@@ -294,6 +289,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 319724551}
     m_Modifications:
+    - target: {fileID: 482331450315367616, guid: ada2587319194f542957a8c2ae277cb9,
+        type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 7075907526031271524}
+    - target: {fileID: 482331450315367616, guid: ada2587319194f542957a8c2ae277cb9,
+        type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 7075907526023713184}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9,
         type: 3}
       propertyPath: m_RootOrder
