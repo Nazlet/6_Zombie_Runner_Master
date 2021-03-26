@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0020b0425d6bc4d38a360e8b16e6ee63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!114 &3741180980911686269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,7 +59,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72e48e08ecb943c887d745372ff7e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 10
+  - ammoType: 1
+    ammoAmount: 20
+  - ammoType: 2
+    ammoAmount: 8
 --- !u!114 &5972051655483047212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,6 +514,11 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 3741180980911686269}
+    - target: {fileID: 9185627755437817902, guid: cecd0ee536bc84e8d82a39f7a961806f,
+        type: 3}
+      propertyPath: ammoType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9185627755437817902, guid: cecd0ee536bc84e8d82a39f7a961806f,
         type: 3}
       propertyPath: m_Enabled
