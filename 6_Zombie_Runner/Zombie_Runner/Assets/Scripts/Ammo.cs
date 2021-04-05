@@ -6,6 +6,7 @@ public class Ammo : MonoBehaviour
 {
     [SerializeField] AmmoSlot[] ammoSlots;
     [System.Serializable]
+
     private class AmmoSlot
     {
         public AmmoType ammoType;
@@ -20,6 +21,11 @@ public class Ammo : MonoBehaviour
     public void ReduceCurrentAmmo(AmmoType ammoType)
     {
         GetAmmoSlot(ammoType).ammoAmount--;
+    }
+
+    public void IncreaseCurrentAmmo(AmmoType ammoType, int ammoAmount)
+    {
+        GetAmmoSlot(ammoType).ammoAmount += ammoAmount;
     }
 
     private AmmoSlot GetAmmoSlot(AmmoType ammoType)
