@@ -8,6 +8,13 @@ public class EnemyHealth : MonoBehaviour
 
     //creat a public method which reduces hitpooints by the amount of damage
 
+    bool isDead = false;
+
+    public bool IsDead()
+    {
+        return isDead;
+    }
+
 
     public void TakeDamage(float damage)
     {
@@ -15,8 +22,15 @@ public class EnemyHealth : MonoBehaviour
         hitPoints -= damage;
         if(hitPoints <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        if (isDead) return;
+        isDead = true;
+        GetComponent<Animator>().SetTrigger("die");
     }
     
 
