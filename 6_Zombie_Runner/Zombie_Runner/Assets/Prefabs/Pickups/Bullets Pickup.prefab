@@ -10,7 +10,12 @@ PrefabInstance:
     - target: {fileID: 482902856721393706, guid: 5b8cc322b42d848b3b2573eed908bcb8,
         type: 3}
       propertyPath: m_Name
-      value: Ammo Pickup
+      value: Bullets Pickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 5331316487288734355, guid: 5b8cc322b42d848b3b2573eed908bcb8,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6723594394874770196, guid: 5b8cc322b42d848b3b2573eed908bcb8,
         type: 3}
@@ -66,6 +71,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569317445579197184, guid: 5b8cc322b42d848b3b2573eed908bcb8,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b8cc322b42d848b3b2573eed908bcb8, type: 3}
