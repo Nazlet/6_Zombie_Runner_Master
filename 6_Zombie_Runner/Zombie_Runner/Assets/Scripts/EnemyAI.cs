@@ -35,7 +35,6 @@ public class EnemyAI : MonoBehaviour
         distanceToTarget = Vector3.Distance(target.position, transform.position);
         if (isProvoked)
         {
-            
             EngageTarget();
         }
         else if(distanceToTarget <= chaseRange)
@@ -57,6 +56,7 @@ public class EnemyAI : MonoBehaviour
         {
             ChaseTarget();
         }
+
         if (distanceToTarget <= navMeshAgent.stoppingDistance)
         {
             AttackTarget();
