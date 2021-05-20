@@ -13,6 +13,7 @@ public class P1Controller : MonoBehaviour
     [SerializeField] float rotationThrust = 1f;
     [SerializeField] GameObject torpedoLaunch;
     [SerializeField] GameObject torpedo;
+    [SerializeField] float maxSpeed = 100f;
 
     Rigidbody rb;
 
@@ -30,6 +31,18 @@ public class P1Controller : MonoBehaviour
         ProcessThrust();
         ProcessRotation();
         ProcessFiring();
+        ApplyConstForce();
+        ApplyMaxSpeed();
+    }
+
+    private void ApplyMaxSpeed()
+    {
+        rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+    }
+
+    private void ApplyConstForce()
+    {
+        rb.AddForce(0,0,0);
     }
 
     private void ProcessFiring()
