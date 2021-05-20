@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ public class TorpedoController : MonoBehaviour
 
     [SerializeField] float mainThrust = 100f;
     [SerializeField] float rotationThrust = 1f;
+    [SerializeField] float torpMaxSpeed = 100f;
 
     Rigidbody rb;
 
@@ -23,6 +25,12 @@ public class TorpedoController : MonoBehaviour
     {
         ProcessThrust();
         ProcessRotation();
+        ApplyTorpMaxSpeed();
+    }
+
+    private void ApplyTorpMaxSpeed()
+    {
+        rb.velocity = Vector3.ClampMagnitude(rb.velocity, torpMaxSpeed);
     }
 
     void ProcessThrust()
