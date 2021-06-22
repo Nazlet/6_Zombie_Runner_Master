@@ -10,6 +10,7 @@ public class PlayerGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        objectToPan.LookAt(targetEnemy);
+        Vector3 targetPosition = new Vector3(targetEnemy.position.x,objectToPan.localPosition.y,targetEnemy.position.z);
+        objectToPan.LookAt(targetPosition);
     }
 }
