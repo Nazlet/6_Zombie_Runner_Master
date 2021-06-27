@@ -66,7 +66,7 @@ public class P1Controller : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(Vector3.forward);
+            transform.Rotate(Vector3.left);
         }
         else if (Input.GetKey(KeyCode.D))
         {
@@ -76,7 +76,7 @@ public class P1Controller : MonoBehaviour
 
     void StartThrusting()
     {
-        rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
+        rb.AddRelativeForce(Vector3.forward * mainThrust * Time.deltaTime);
 
 
     }
@@ -97,7 +97,7 @@ public class P1Controller : MonoBehaviour
     void ApplyRotation(float rotationThisFrame)
     {
         rb.freezeRotation = true;  // freezing rotation so we can manually rotate
-        transform.Rotate(Vector3.forward * rotationThisFrame * Time.deltaTime);
+        transform.Rotate(Vector3.left * rotationThisFrame * Time.deltaTime);
         rb.freezeRotation = false;  // unfreezing rotation so the physics system can take over
     }
 }
