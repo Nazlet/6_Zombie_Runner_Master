@@ -35,7 +35,7 @@ public class TorpedoController : MonoBehaviour
 
     void ProcessThrust()
     {
-        rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
+        rb.AddRelativeForce(Vector3.down * mainThrust * Time.deltaTime);
     }
 
     void ProcessRotation()
