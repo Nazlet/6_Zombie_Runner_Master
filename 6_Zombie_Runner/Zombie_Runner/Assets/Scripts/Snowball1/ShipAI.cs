@@ -27,4 +27,9 @@ public class ShipAI : MonoBehaviour
         }
         
     }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, chaseRange);
+    }
 }
