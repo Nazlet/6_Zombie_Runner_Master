@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7199750143940645715
 Transform:
   m_ObjectHideFlags: 0
@@ -136,6 +136,10 @@ MonoBehaviour:
   mainThrust: 80
   rotationThrust: 0
   torpMaxSpeed: 15
+  rotationSpeed: 5
+  adjustmentx: 0
+  adjustmenty: -100
+  adjustmentz: 0
 --- !u!1001 &8480800378285334294
 PrefabInstance:
   m_ObjectHideFlags: 0
