@@ -55,11 +55,11 @@ public class TorpedoController : MonoBehaviour
     //    rb.freezeRotation = false;  // unfreezing rotation so the physics system can take over
     //}
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(transform.position.x - adjustmentx, transform.position.y - adjustmenty, transform.position.z - adjustmentz));
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotationSpeed);
-        print("torpedo triggered");
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    Quaternion lookRotation = Quaternion.LookRotation(new Vector3(transform.position.x - adjustmentx, transform.position.y - adjustmenty, transform.position.z - adjustmentz));
+    //    transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotationSpeed);
+    //    print("torpedo triggered");
+    //}
 
 }
