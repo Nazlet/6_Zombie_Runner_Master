@@ -29,7 +29,7 @@ public class TorpedoController : MonoBehaviour
     void Update()
     {
         ProcessThrust();
-        ProcessRotation();
+        //ProcessRotation();
         ApplyTorpMaxSpeed();
     }
 
@@ -43,17 +43,17 @@ public class TorpedoController : MonoBehaviour
         rb.AddRelativeForce(Vector3.forward * mainThrust * Time.deltaTime);
     }
 
-    void ProcessRotation()
-    {
-        ApplyRotation(rotationThrust);
-    }
+    //void ProcessRotation()
+    //{
+    //    ApplyRotation(rotationThrust);
+    //}
 
-    void ApplyRotation(float rotationThisFrame)
-    {
-        rb.freezeRotation = true;  // freezing rotation so we can manually rotate
-        transform.Rotate(Vector3.forward * rotationThisFrame * Time.deltaTime);
-        rb.freezeRotation = false;  // unfreezing rotation so the physics system can take over
-    }
+    //void ApplyRotation(float rotationThisFrame)
+    //{
+    //    rb.freezeRotation = true;  // freezing rotation so we can manually rotate
+    //    transform.Rotate(Vector3.forward * rotationThisFrame * Time.deltaTime);
+    //    rb.freezeRotation = false;  // unfreezing rotation so the physics system can take over
+    //}
 
     private void OnTriggerEnter(Collider other)
     {
