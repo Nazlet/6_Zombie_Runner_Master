@@ -1,5 +1,7 @@
 ﻿//using UnityEngine;
 //using UnityEditor;
+//using UnityEngine.AI;
+
 
 //[CustomEditor(typeof(NavMeshSlope))]
 
@@ -7,7 +9,7 @@
 //{
 //    public override void OnInspectorGUI()
 //    {
-//        [MenuItem("NavMeshSlope")]
+//        [MenuItem("NavMesh/Build With Slope 90")]
 
 //        public static void BuildSlope90()
 //        {
@@ -15,7 +17,7 @@
 //            SerializedProperty prop = obj.FindProperty("m_BuildSettings.agentSlope");
 //            prop.floatValue = 90.0f;
 //            obj.ApplyModifiedProperties();
-//            NavMeshBuilder.BuildNavMesh();
+//            NavMeshBuilder.BuildNavMeshData();
 //        }
 //    }
 //}
