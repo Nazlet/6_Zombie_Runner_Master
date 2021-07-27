@@ -9,13 +9,11 @@ public class HarvesterAI : MonoBehaviour
 
     NavMeshAgent navMeshAgent;
 
-    // Start is called before the first frame update
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         navMeshAgent.SetDestination(collector.position);
