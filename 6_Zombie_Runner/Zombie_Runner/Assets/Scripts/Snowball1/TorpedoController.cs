@@ -7,12 +7,12 @@ public class TorpedoController : MonoBehaviour
 {
 
     [SerializeField] float mainThrust = 100f;
-    [SerializeField] float rotationThrust = 1f;
+    //[SerializeField] float rotationThrust = 1f;
     [SerializeField] float torpMaxSpeed = 100f;
-    [SerializeField] float rotationSpeed = 5f;
-    [SerializeField] float adjustmentx = 10f;
-    [SerializeField] float adjustmenty = 10f;
-    [SerializeField] float adjustmentz = 10f;
+    //[SerializeField] float rotationSpeed = 5f;
+    //[SerializeField] float adjustmentx = 10f;
+    //[SerializeField] float adjustmenty = 10f;
+    //[SerializeField] float adjustmentz = 10f;
 
 
     Rigidbody rb;
