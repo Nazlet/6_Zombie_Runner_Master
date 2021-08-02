@@ -18,4 +18,9 @@ public class HarvesterAI : MonoBehaviour
     {
         navMeshAgent.SetDestination(collector.position);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+    }
+
 }
